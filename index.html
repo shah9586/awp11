@@ -332,6 +332,12 @@
         <center>
             <form action="#"  class="join-form">
                 <input type="text" placeholder="Name" required class="form-input">
+    </section>
+
+    <div id="app" ng-app="myApp" ng-controller="myController">
+        <h1>{{ message }}</h1>
+        <ul>
+            <li ng-repeat="subject in subjects">{{ subject.name }}</li>
                 <input type="email" placeholder="Email" required class="form-input">
                 <input type="submit" value="Join Us" class="form-button">
             </form>
@@ -363,5 +369,9 @@
             document.getElementById('loginModal').classList.remove('active');
         }
     </script>
+
+    <!-- Include Angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
